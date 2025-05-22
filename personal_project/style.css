@@ -15,3 +15,11 @@
     --shadow: 0 5px 15px rgba(0,0,0,0.1);
     --shadow-hover: 0 8px 25px rgba (0,0,0.0.15);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
