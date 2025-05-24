@@ -566,10 +566,86 @@ img {
 
 .client-name {
     font-weight: 600;
-    font-size: 5px;
+    font-size: 0.7rem;
 }
 
 .client-title {
     color: var(--medium);
     font-size: 0.9rem;
+}
+
+/*contact section with map*/
+
+.contact-section {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.contact-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-form {
+    padding: 40px;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-info {
+    padding: 40px 0;
+}
+
+.contact-info h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/*map container styles*/
+
+.map-container {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    padding-bottom: 56.25%; /*16:9 Aspect ratio*/
+    height: 0;
+    margin-top: 20px;
 }
