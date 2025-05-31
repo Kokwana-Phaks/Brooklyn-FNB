@@ -76,7 +76,24 @@ body {
     background-repeat: repeat-y;
 }
 
-#content {
+#content{
     padding-top: 1px;
     padding-bottom: 50px;
+}
+
+a.info-box {
+    text-decoration: none;
+    background: rgba(255, 225, 55, .8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+}
+
+.info-box img {
+    height: 70px;
+    margin: 10px;
+    float: left;
 }
