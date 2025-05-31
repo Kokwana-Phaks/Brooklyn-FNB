@@ -69,3 +69,14 @@ body {
     text-decoration: none;
     padding-top: none;
 }
+
+#main {
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y;
+}
+
+#content {
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
