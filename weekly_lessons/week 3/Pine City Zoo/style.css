@@ -138,5 +138,19 @@ a.info-box {
     text-align: center;
 }
 
+/*weather css*/
 
+img.info-box-weather-icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    float: left;
+}
+
+h1.info-box-weather-icon {
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
 
