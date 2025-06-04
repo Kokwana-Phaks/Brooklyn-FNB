@@ -134,7 +134,9 @@ a.info-box {
     width: 100%;
 }
 
-#info-box-full {
+#info-box-full h3 {
     text-align: center;
 }
+
+
 
