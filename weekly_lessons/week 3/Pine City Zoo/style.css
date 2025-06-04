@@ -119,3 +119,22 @@ a.info-box {
     height: 40px;
 }
 
+/* info box full */
+
+#info-box-full {
+    background-color: rgba(255, 255, 255, .8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+#info-box-full img {
+    width: 100%;
+}
+
+#info-box-full {
+    text-align: center;
+}
+
