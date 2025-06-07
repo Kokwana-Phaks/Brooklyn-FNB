@@ -1,3 +1,5 @@
+/*if else statements */
+
 function changeText() {
     if (document.getElementById("heading").innerHTML =='JavaScript') {
         document.getElementById("heading").innerHTML = 'Is awesome';
@@ -5,6 +7,8 @@ function changeText() {
         document.getElementById("heading").innerHTML = 'JavaScript';
     }
 }
+
+/* function parameters */
 
 addNumbers(10, 7);
 
