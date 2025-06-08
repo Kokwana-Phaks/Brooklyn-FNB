@@ -9,3 +9,4 @@ document.getElementById("outputtext").innerHTML = num1 + num2;
 function stringToNumbers(text) {
     return parseInt(text);
 }
+
