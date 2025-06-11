@@ -8,7 +8,7 @@ var currentOperator;
 
 function digitBtnPressed(button) {
 
-    if (newLine == true) {
+    if (newLine) {
         document.getElementById("inputBox").value = button;
         newLine = false;       
     } else {
@@ -31,4 +31,29 @@ function operatorBtnPressed(operator) {
     value1 = parseInt(document.getElementById("inputBox").value);
     newLine = true;
     
+}
+
+// Equals button event handler.
+
+function equalsBtnPressed() {
+    var value2 = parseInt(document.getElementById("inputBox").value);
+    var finalTotal;
+
+    switch(currentOperator) {
+        case "+":
+            finalTotal = value1 + value2;
+            break;
+        case "-":
+            finalTotal = value1 - value2;
+            break;
+        case "/":
+            finalTotal = value1 / value2;
+            break;
+        case "x":
+            finalTotal = value1 * value2;
+            break;
+    }
+    document.getElementById("inputBox").value = finalTotal;
+    value1 = 0;
+    newLine = true;
 }
