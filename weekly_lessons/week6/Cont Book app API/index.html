@@ -7,11 +7,13 @@
 </head>
 <body onload="fetchContacts()">
     <div id="table">Contact loading...</div>
-    <button id="refress">Refresh</button>
+    <button id="refresh">Refresh</button>
     <button id="addContact">Add Contact</button>
     
     <script src="config.js"></script>
     <script>
+        document.getElementById("refresh").addEventListener('click', fetchContacts);
+        
         function fetchContacts() {
             fetch(rootPath + "controller/get-contacts")
             .then(function(response){
