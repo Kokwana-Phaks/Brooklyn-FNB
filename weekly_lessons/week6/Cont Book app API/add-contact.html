@@ -21,5 +21,17 @@
     </form>
     <br>
     <button id="homelink" type="button">Home</button>
+
+    <script src="config.js"></script>
+    <script>
+        
+        function submitForm(e){
+            e.preventDefault();
+
+            const form = new FormData(document.querySelector('#editForm'));
+            form.append('apiKey');
+
+        }
+    </script>
 </body>
 </html>
