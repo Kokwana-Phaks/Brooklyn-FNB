@@ -10,7 +10,7 @@
      <form id="editForm">
         <label for="firstname">First name</label>
         <input type="text" id="firstname" readonly><br><br>
-        <label for="lastname" id="lastname">Last name</label>
+        <label for="lastname">Last name</label>
         <input type="text" id="lastname" readonly><br><br>
         <label for="mobile">Mobile</label>
         <input type="text" id="mobile" readonly><br><br>
@@ -45,13 +45,24 @@
                 return response.json();
             })
             .then(function(data){
-                //display contact info
+                displayOutput(data);
                 console.log(data); 
             })
         }
 
         function homeLink() {
             window,open("index.html", "_self");
+        }
+
+        function displayOutput(data) {
+            avatarImg = `
+                <img src="${rootPath}/controller/uploads/${data[0].avatar}" width="200" />
+            `
+            document.getElementById("avatarImage").innerHTML = avatarImg;
+            document.getElementById("firstname").value = data[0].firstname; 
+            document.getElementById("lastname").value = data[0].lastname;
+            document.getElementById("mobile").value = data[0].mobile;
+            document.getElementById("email").value = data[0].email;
         }
     </script>
 </body>
