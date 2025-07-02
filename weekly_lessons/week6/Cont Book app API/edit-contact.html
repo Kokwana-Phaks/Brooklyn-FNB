@@ -73,11 +73,14 @@
             document.getElementById("email").readOnly = false;
             document.getElementById("avatar").hidden = false;
             document.getElementById("submitForm").hidden = false;
-            
+        }
 
+        function submitForm(e){
+            e.preventDefault();
 
-
-
+            const form = new FormData(document.querySelector("#editForm"));
+            form.append('apiKey', apiKey);
+            form.append('id', id);
         }
     </script>
 </body>
