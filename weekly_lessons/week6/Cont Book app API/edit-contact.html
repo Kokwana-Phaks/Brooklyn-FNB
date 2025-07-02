@@ -9,13 +9,13 @@
     <div id="avatarImage"></div>
      <form id="editForm">
         <label for="firstname">First name</label>
-        <input type="text" id="firstname" readonly><br>
+        <input type="text" id="firstname" readonly><br><br>
         <label for="lastname" id="lastname">Last name</label>
-        <input type="text" id="lastname" readonly><br>
+        <input type="text" id="lastname" readonly><br><br>
         <label for="mobile">Mobile</label>
-        <input type="text" id="mobile" readonly><br>
+        <input type="text" id="mobile" readonly><br><br>
         <label for="email">Email</label>
-        <input type="text" id="email" readonly><br>
+        <input type="text" id="email" readonly><br><br>
         <label for="avatar" id="avatarLabel" hidden> Change profile image</label><br>
         <input type="file" id="avatar" hidden><br><br>
         <button type="submit" id="submitForm" hidden>Submit</button>
@@ -28,6 +28,15 @@
     <script src="config.js"></script>
     <script>
 
+        var id = getId();
+        console.log("The ID is : " + id)
+
+        function getId(){
+            var url = window.location.href;
+            var pos = url.search("=");
+            var id = url.slice(pos + 1);
+            return id;
+        }
     </script>
 </body>
 </html>
