@@ -20,18 +20,20 @@
         <button type="submit" id="submitForm">Submit</button>
     </form>
     <br>
-    <button id="homelink" type="button">Home</button>
+    <button id="homeLink" type="button">Home</button>
 
     <script src="config.js"></script>
     <script>
+        document.getElementById("submitForm").addEventListener('click', submitForm);
+        document.getElementById("homeLink").addEventListener('click', homeLink);
 
         function submitForm(e){
             e.preventDefault();
 
             const form = new FormData(document.querySelector('#editForm'));
-            form.append('apiKey');
+            form.append('apiKey', apiKey);
 
-            fetch(rootPath + 'controller/insert-contact', {
+            fetch(rootPath + 'controller/insert-contact/', {
                 method: 'Post',
                 headers: {'Accept': 'application/json, *,*'},
                 body: form 
@@ -42,13 +44,18 @@
             .then(function(data){
                 if (data == "1") {
                     alert("Contact added.");
-                    //link to home page
+                    homeLink();
                 }else{
                     alert(data);
-                    //link to home page
+                    homeLink(); 
                 }
             })
         }
+
+        function homeLink(){
+            window.open("index.html", "_self");
+        }
+
     </script>
 </body>
 </html>
