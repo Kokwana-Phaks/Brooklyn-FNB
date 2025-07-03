@@ -11,3 +11,4 @@ print(type(num1))
 num2 = 2.0
 
 print(type(num2))
+
