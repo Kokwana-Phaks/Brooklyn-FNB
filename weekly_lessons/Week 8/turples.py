@@ -1,4 +1,4 @@
-# turple are imutable, can not be change or modified
+# turple are ordered imutable, can not be change or modified
 # allow duplicates
 # suitable for storing coordinates or data that can not be changed during excution.
 
