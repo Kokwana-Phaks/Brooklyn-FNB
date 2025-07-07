@@ -5,6 +5,3 @@ def add(a, b):
 
 def subtraction(a, b):
     return a - b
-
-add(5,5)
-print(add)

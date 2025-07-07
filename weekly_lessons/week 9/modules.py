@@ -6,7 +6,7 @@ print(math_operations.add(5,2))
 print(math_operations.subtraction(10,5))
 
 
-#
+#other way 
 
 add = math_operations.add(4,4)
 print(add)
