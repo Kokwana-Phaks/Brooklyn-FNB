@@ -11,4 +11,3 @@ print(f"The perimeter of the rectangle is: {perimeter}")
 
 
 
-1
