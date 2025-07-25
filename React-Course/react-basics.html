@@ -20,10 +20,12 @@
         const button = <button> Hello</button>;
         const paragraph = <p> paragraph of text </p>;
 
-        const div = <div>
-            <button> Hello</button>
-            <p> paragraph of text </p>
+        const div = (
+            <div>
+                <button>Hello</button>
+                <p>paragraph of text </p>
             </div>
+        );
 
       const container = document.querySelector('.js-container');// get the html element sends it js and js modify html elements on the page. combine and interact with eatch DOM.
       ReactDOM.createRoot(container).render(div); // ReactDOM.createRoot(container).Sets up React. container to keep things isolated and organise and (.render) tells what to display inside the container
