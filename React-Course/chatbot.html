@@ -14,17 +14,17 @@
 
         function ChatInput() {
             return (
-                <div>
-                    <input/>
+                <>
+                    <input />
                     <button>Send</button>
-                </div>
+                </>
             )
         }
 
-        const div =(
-            <div>
-                <ChatInput/>
-            </div>
+        const div = (
+            <>
+                <ChatInput /> 
+            </>
         );
       const container = document.querySelector('.js-container');// get the html element sends it js and js modify html elements on the page. combine and interact with eatch DOM.
       ReactDOM.createRoot(container).render(div); // ReactDOM.createRoot(container).Sets up React. container to keep things isolated and organise and (.render) tells what to display inside the container
