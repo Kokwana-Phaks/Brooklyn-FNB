@@ -27,6 +27,7 @@
         //  const {message, sender} = props;
         //  destructing code
 
+            /*
             if (sender === 'robot') {
                 return (
                     <div>
@@ -35,9 +36,11 @@
                     </div>
                 );
             }
+                */
 
             return (
                 <div>
+                    {sender === 'robot' && <img src="robot.png" width="50" />}
                     {message}
                     <img src="user.png" width="50" />
                 </div>
