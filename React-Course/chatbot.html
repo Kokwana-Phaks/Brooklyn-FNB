@@ -15,10 +15,10 @@
         function ChatInput() {
             return (
                 <>
-                    <input />
+                    <input placeholder="Send a message to Chatbot" size="30"/>
                     <button>Send</button>
                 </>
-            )
+            );
         }
 
         const app = (
@@ -26,6 +26,7 @@
                 <ChatInput /> 
             </>
         );
+
       const container = document.querySelector('.js-container');// get the html element sends it js and js modify html elements on the page. combine and interact with eatch DOM.
       ReactDOM.createRoot(container).render(app); // ReactDOM.createRoot(container).Sets up React. container to keep things isolated and organise and (.render) tells what to display inside the container
     </script>
