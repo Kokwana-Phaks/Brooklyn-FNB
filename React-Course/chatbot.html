@@ -15,7 +15,10 @@
         function ChatInput() {
             return (
                 <>
-                    <input placeholder="Send a message to Chatbot" size="30" />
+                    <input
+                        placeholder="Send a message to Chatbot" 
+                        size="30" 
+                     />
                     <button>Send</button>
                 </>
             );
@@ -40,9 +43,13 @@
 
             return (
                 <div>
-                    {sender === 'robot' && <img src="robot.png" width="50" />}
+                    {sender === 'robot' && (
+                        <img src="robot.png" width="50" />
+                    )}
                     {message}
-                    <img src="user.png" width="50" />
+                    {sender === 'user' && (
+                        <img src="user.png" width="50" />
+                    )}
                 </div>
             );
         }
@@ -50,10 +57,22 @@
         const app = (
             <>
                 <ChatInput /> 
-                <ChatMessage message="Hello Chatbot"  sender="user" />
-                <ChatMessage message="Hello! How can I help you" sender="robot" />
-                <ChatMessage message="can you get todays date?" sender="user" />
-                <ChatMessage message="Today is July 26" sender="robot" />
+                <ChatMessage 
+                    message="Hello Chatbot"  
+                    sender="user" 
+                />
+                <ChatMessage 
+                    message="Hello! How can I help you" 
+                    sender="robot" 
+                />
+                <ChatMessage 
+                    message="can you get todays date?" 
+                    sender="user" 
+                />
+                <ChatMessage 
+                    message="Today is July 26" 
+                    sender="robot" 
+                />
             </>
         );
 
