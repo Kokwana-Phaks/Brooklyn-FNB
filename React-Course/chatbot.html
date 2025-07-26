@@ -15,8 +15,17 @@
         function ChatInput() {
             return (
                 <>
-                    <input placeholder="Send a message to Chatbot" size="30"/>
+                    <input placeholder="Send a message to Chatbot" size="30" />
                     <button>Send</button>
+                </>
+            );
+        }
+
+        function ChatMessage() {
+            return (
+                <>
+                    Hello Chatbot
+                    <img src="user.png" />
                 </>
             );
         }
@@ -24,6 +33,7 @@
         const app = (
             <>
                 <ChatInput /> 
+                <ChatMessage />
             </>
         );
 
