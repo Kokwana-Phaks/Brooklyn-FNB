@@ -7,13 +7,21 @@ export default function App () {
   const [tasks, setTasks] = useState ([]);
 
   useEffect(() => {
+    try {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(savedTasks);
-
+  } catch (error) {
+    console.error("Failed to load tasks:", error);
+    setTasks([]);
+  }
   }, []);
 
   useEffect(() => {
+    try {
     localStorage.setItem("tasks", JSON.stringify(tasks));
+    } catch (error) {
+      console.error("Failed to save tasks:", error);
+    }
   },[tasks]);
 
   function addTask(name) {
