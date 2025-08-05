@@ -15,7 +15,7 @@ export default function TaskForm ({onAdd}) {
             <input type="text"
                 value={taskName}
                 onChange={(e) => setTaskName(e.target.value)}
-                placeholder="Add a tast..."
+                placeholder="Add a task..."
             />
             <button>Add Task</button>
         </form>
