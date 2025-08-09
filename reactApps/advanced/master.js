@@ -10,7 +10,6 @@ text
 src/
 ├── components/
 │   ├── TaskForm.jsxls
-
 │   ├── TaskItem.jsx
 │   ├── TaskList.jsx
 │   ├── SearchBar.jsx

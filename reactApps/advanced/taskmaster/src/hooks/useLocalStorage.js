@@ -18,5 +18,6 @@ export function useLocalStorage(key, initialValue) {
             console.error(`Error setting localStorage key "${key}":`, error);
         }
     }, [key, value]);
+    
     return[value, setValue];
 }
