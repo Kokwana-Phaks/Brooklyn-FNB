@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "./contexts/ThemeContext";
-import { useKeyPress } from ".hooks/useKeyPress";
-import TaskList from ".components/TaskList";
-import ThemeToggle from ".components/ThemeToggle";
-import AppTour from ".componetns/AppTour";
-import Notification from "./components/AppTour";
-import ".App.css";
+import { useKeyPress } from "./hooks/useKeyPress";
+import TaskList from "./components/TaskList";
+import ThemeToggle from "./components/ThemeToggle";
+import AppTour from "./components/AppTour";
+import Notification from "./components/Notification";
+import "./App.css";
 
 
 export default function App() {

@@ -1,6 +1,6 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-import { filterTasks, filterTasks, sortTasks } from "../utils/helpers";
+import { filterTasks, sortTasks } from "../utils/helpers";
 import TaskForm from "./TaskForm";
 import TaskItem from './TaskItem';
 import SearchBar from './SearchBar';
@@ -21,7 +21,7 @@ export default function TaskList({onNotification}) {
         onNotification('Task added successfully', 'succces');
     };
 
-    const updateTask =(id.taskData) => {
+    const updateTask = (id, taskData) => {
         setTasks(prev =>
             prev.map(task =>
                 task.id === id 
@@ -42,11 +42,7 @@ export default function TaskList({onNotification}) {
 
     return (
         <div className="task-manager">
-            <SearchBar
-                setSearchTerm={setSearchTerm}
-                setSearchTerm={setSearchTerm}
-            />
-
+            <SearchBar setSearchTerm={setSearchTerm} />
             <TaskForm 
                 onAdd={addTask}
                 editTask={updateTask}

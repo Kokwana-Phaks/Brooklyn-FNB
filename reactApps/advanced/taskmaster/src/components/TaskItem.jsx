@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiEdit2, FiTrash2, FiCheck, FiFlag } from "react-icons/fi";
-import { formatDueDate, getPriorityColor } from "../../../helpers";
+import { formatDueDate, getPriorityColor } from "../utils/helpers";
 
 export default function TaskItem ({task, onToggle, onDelete, onEdit}) {
     const [isHovered, setIsHovered] = useState(false);
