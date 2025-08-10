@@ -61,7 +61,7 @@ export default function TaskForm({onAdd, editTask, onUpdate, setEditTask}) {
             </div>
             <div className="form-actions">
                 <button type="submit" aria-label={editTask ? "Save changes" : "Add task"}>
-                    {editTask ? <FiSave/> : <FiPlus />} 
+                    {editTask ? <FiSave /> : <FiPlus />} 
                 </button>
                 {editTask && (
                     <button typeof="button" onClick={resetForm} aria-label="cancel edit">
