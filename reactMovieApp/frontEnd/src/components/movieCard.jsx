@@ -11,7 +11,7 @@ function MovieCard({movie}) {
                 <img src={movie.url} alt={movie.title} />
                 <div className="movie-overlay">
                     <button className="favorite-btn" onClick={onFavoriteClick}>
-                        frontEnd/8978668.png
+                        ♥
                     </button>
                 </div>
             </div>
