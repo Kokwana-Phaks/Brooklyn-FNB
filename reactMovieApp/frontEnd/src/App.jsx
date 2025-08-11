@@ -8,13 +8,6 @@ function App() {
   
   return (
     <>
-      {movieNumber === 1 ? (
-        <MovieCard movie={{title: "Phaks's Film", release_date: "2025"}} />
-      ) : (
-        <MovieCard movie={{title: "Phaks's Film", release_date: "2025"}} />
-
-      )}
-
       <Home />
     </>
   );
