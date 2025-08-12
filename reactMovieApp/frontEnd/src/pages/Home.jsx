@@ -10,7 +10,11 @@ function Home() {
         {id: 3, title: "The Matrix", release_date: "1998"},
     ];
 
-    const handleSearch = () => {};
+    const handleSearch = (e) => {
+        e.preventDefault()
+        alert(searchQuery)
+        setSearchQuery("") // what to display after the search
+    };
 
     return (
         <div className="home"> 
@@ -27,6 +31,7 @@ function Home() {
 
             <div className="movies-grid">
                 {movies.map((movie) => (
+                    movie.title.toLowerCase().startsWith(searchQuery) &&
                     <MovieCard movie ={movie} key={movie.id} />
                 ))}
             </div>
