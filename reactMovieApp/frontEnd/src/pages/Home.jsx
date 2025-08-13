@@ -6,24 +6,23 @@ import "../css/Home.css";
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
-  const [error, setError] = useState(null)
-  const [loading, setLoading] = useState (true)
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadPopularMovies = async () => {
       try {
-        const popularMovies = await getPopularMovies()
-        setMovies(popularMovies)
+        const popularMovies = await getPopularMovies();
+        setMovies(popularMovies);
       } catch (err) {
-        console.log(err)
-        setError("Failed to load movies....")
+        console.log(err);
+        setError("Failed to load movies....");
+      } finally {
+        setLoading(false);
       }
-      finally {
-        setLoading(false)
-      }
-    }
-    loadPopularMovies()
-  }, [])
+    };
+    loadPopularMovies();
+  }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -45,12 +44,13 @@ function Home() {
           Search
         </button>
       </form>
-
-      <div className="movies-grid">
+      
+      {loading ? <div className="loading">loading... </div> : <div className="movies-grid">
         {movies.map((movie) => (
           <MovieCard movie={movie} key={movie.id} />
         ))}
-      </div>
+      </div>}
+      
     </div>
   );
 }
