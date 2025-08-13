@@ -11,7 +11,7 @@ function MovieCard({ movie }) {
     else addToFavorites(movie);
   }
 
-  return 
+  return (
     <div className="movie-card">
       <div className="movie-poster">
         <img
@@ -32,6 +32,7 @@ function MovieCard({ movie }) {
         <p>{movie.release_date}</p>
       </div>
     </div>
+  )
 }
 
 export default MovieCard;
