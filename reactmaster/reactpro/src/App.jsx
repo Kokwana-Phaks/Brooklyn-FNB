@@ -1,11 +1,16 @@
 import Hello from "./components/Hello";
 
 function App() {
+
+  const person = {
+    name: "Phaks",
+    message: "Hi there!",
+    emoji: "👨🏿‍💻",
+    seatNumbers: [1, 4, 7],
+  }
   return (
     <div className="App">
-      <Hello />
-      <Hello name="Phaks" message="You are now a SE!" emoji="👨🏿‍💻"/>
-      <Hello name="BackEnd" message="You are the best Engineer in town" emoji="⎔"/>
+      <Hello person={person} />
     </div>
   );
 }
