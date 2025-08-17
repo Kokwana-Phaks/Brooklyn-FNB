@@ -4,7 +4,7 @@ function Prices() {
         const prices = [10, 20,30, 40,50]
         return(
             <h1> 
-                {prices.map((price) => (<li>{price * 32/100}</li>))}
+                {prices.map((price) => (<li key={price}>{price * 32/100}</li>))}
             </h1>
         );
 
