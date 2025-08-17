@@ -1,4 +1,6 @@
+import Fruits from "./components/fruits";
 import Hello from "./components/Hello";
+import Prices from "./components/Prices";
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <Hello person={person} />
+      <Fruits />
+      <Prices />
     </div>
   );
 }
