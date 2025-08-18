@@ -1,7 +1,5 @@
-import Fruits from "./components/fruits";
+import Fruits from "./components/Fruits";
 import Hello from "./components/Hello";
-import Prices from "./components/Prices";
-import Check from "./components/check";
 
 function App() {
 
@@ -9,14 +7,12 @@ function App() {
     name: "Phaks",
     message: "Hi there!",
     emoji: "👨🏿‍💻",
-    seatNumbers: [1, 4, 7],
+    seatNumbers: [3, 6, 0],
   }
   return (
     <div className="App">
       <Hello person={person} />
       <Fruits />
-      <Prices />
-      <Check />
     </div>
   );
 }
