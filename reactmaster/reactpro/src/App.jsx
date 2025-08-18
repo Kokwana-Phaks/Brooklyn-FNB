@@ -2,6 +2,7 @@ import Zone from "./components/condition";
 import ConditionalComponent from "./components/ConditionalComponent";
 import Fruits from "./components/Fruits";
 import Hello from "./components/Hello";
+import Tenary from "./components/Tenary";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Fruits />
       <ConditionalComponent />
       <Zone />
+      <Tenary />
     </div>
   );
 }
