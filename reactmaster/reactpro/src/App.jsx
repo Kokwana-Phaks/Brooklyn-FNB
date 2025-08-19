@@ -4,6 +4,7 @@ import Fruits from "./components/fruits";
 import Hello from "./components/Hello";
 import Tenary from "./components/Tenary";
 import Message from "./components/Message";
+import Counter from "./components/counter";
 
 function App() {
   const person = {
@@ -20,6 +21,7 @@ function App() {
       <Zone />
       <Tenary />
       <Message />
+      <Counter />
     </div>
   );
 }
