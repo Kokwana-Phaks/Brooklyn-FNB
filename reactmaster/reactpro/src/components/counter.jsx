@@ -1,21 +1,34 @@
 import { useState } from "react";
 
 export default function Counter() {
-    const [Count, SetCount] = useState (0);
+  const [count, setCount] = useState(0);
+  const [increaseBy, setIncreaseBy] = useState(1);
 
-    function Increasement(){
-        SetCount(Count + 1)
-    }
+  function Increase() {
+    setCount(count + increaseBy);
+  }
 
-    function Decreament() {
-        SetCount(Count - 1)
-    }
+  function Decrease() {
+    setCount(count - increaseBy);
+  }
 
-    return (
-        <div>
-            <h1>The Count is: {Count}</h1>
-            <button onClick={Increasement}>Increase</button>
-            <button onClick={Decreament}>Decrease</button>
-        </div>
-    );
+  function IncreaseBy() {
+    setIncreaseBy(increaseBy + 1);
+  }
+
+  function DecreaseBy() {
+    setIncreaseBy(increaseBy - 1);
+  }
+
+  return (
+    <div>
+      <h1>The Count is: {count}</h1>
+      <button onClick={Increase}>increase</button>
+      <button onClick={Decrease}>decrease</button>
+
+      <h1>Increase count by{increaseBy}</h1>
+      <button onClick={IncreaseBy}>increase counter by</button>
+      <button onClick={DecreaseBy}>decrease counter by</button>
+    </div>
+  );
 }
