@@ -1,14 +1,22 @@
 import { useState } from "react";
 
 export default function Form() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState({ firstName: "", lastName: "" });
+
   return (
     <div>
+      {name.firstName} - {name.lastName}
       <form>
         <input
-          onChange={(e) => setName(e.target.value)}
           type="text"
-          value={name}
+          value={name.firstName}
+          onChange={(e) => setName({ ...name, firstName: e.target.value })}
+        />
+
+        <input
+          type="text"
+          value={name.lastName}
+          onChange={(e) => setName({ ...name, lastName: e.target.value })}
         />
       </form>
     </div>
