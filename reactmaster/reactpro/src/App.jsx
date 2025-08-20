@@ -5,6 +5,7 @@ import Hello from "./components/Hello";
 import Tenary from "./components/Tenary";
 import Message from "./components/Message";
 import Counter from "./components/counter";
+import Form from "./components/Form";
 
 function App() {
   const person = {
@@ -22,6 +23,7 @@ function App() {
       <Tenary />
       <Message />
       <Counter />
+      <Form />
     </div>
   );
 }
