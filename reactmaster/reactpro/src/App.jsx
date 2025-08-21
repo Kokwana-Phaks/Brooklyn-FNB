@@ -6,6 +6,7 @@ import Tenary from "./components/Tenary";
 import Message from "./components/Message";
 import Counter from "./components/counter";
 import Form from "./components/Form";
+import Zam from "./components/form2";
 
 function App() {
   const person = {
