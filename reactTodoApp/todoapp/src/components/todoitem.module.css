@@ -25,3 +25,7 @@
     font-family: sans-serif;
     cursor: pointer;
 }
+
+.completed {
+    text-decoration: line-through;
+}
