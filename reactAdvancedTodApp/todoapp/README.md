@@ -1,12 +1,45 @@
-# React + Vite
+# Modern Web Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application built with Vite, featuring a clean design and interactive UI components.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+index.html # Main HTML entry point
+├── package.json # Project dependencies and scripts
+├── package-lock.json # Exact dependency tree
+├── vite.config.js # Vite configuration
+├── eslint.config.js # ESLint configuration
+├── src/ # Source code directory
+├── node_modules/ # Installed dependencies (not in version control)
+└── README.md # Project documentation
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Modern Design**: Clean, responsive layout with a professional color scheme
+- **Interactive Components**: Animated buttons, cards, and navigation
+- **Responsive Layout**: Adapts to desktop, tablet, and mobile screens
+- **Performance Optimized**: Built with Vite for fast development and optimized builds
+
+## Technologies Used
+
+- **HTML5**: Semantic markup
+- **CSS3**: Custom properties, Flexbox, Grid, and animations
+- **JavaScript**: ES6+ features
+- **Vite**: Next-generation frontend tooling
+- **ESLint**: Code linting and quality assurance
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd project-directory
+```
