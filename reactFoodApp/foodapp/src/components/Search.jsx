@@ -1,21 +1,21 @@
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 
 export default function Search() {
-    const[query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
 
-    useEffect(() => {
-        function demo() {
-            console.log("Demo function excuted");
-        }
-        demo();
-    }, [query]);
-
-    return (
-        <div>
-            <input type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)} 
-            />
-        </div>
-    );
-}  
+  useEffect(() => {
+    function demo() {
+      console.log("demo function excuted");
+    }
+    demo();
+  }, [query]);
+  return (
+    <div>
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </div>
+  );
+}
