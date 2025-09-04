@@ -9,7 +9,7 @@ import FoodDetails from "./components/FoodDetails";
 
 function App() {
   const [foodData, setFoodData] = useState([]); //To save results/data from API call and pass it to other components
-  const [foodId, setFoodId] = useState("");
+  const [foodId, setFoodId] = useState("656329");
   return (
     <div className="APP">
       <Nav />
