@@ -8,11 +8,16 @@ export default function FoodItem({ food, setFoodId }) {
         <p className={style.itemName}>{food.title}</p>
       </div>
       <div className={style.buttonContainer}>
-        <button onClick={()=>{
-          console.log(food.id);
-          setFoodId(food.id)
-        }} className={style.itemButton}>View Recipe</button>
+        <button
+          onClick={() => {
+            console.log(food.id);
+            setFoodId(food.id);
+          }}
+          className={style.itemButton}
+        >
+          View Recipe
+        </button>
       </div>
-    </div>
+    </div>    
   );
 }
