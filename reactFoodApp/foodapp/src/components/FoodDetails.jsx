@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./fooddetails.module.css";
+import ItemList from "./ItemList";
 
 export default function FoodDetails({ foodId }) {
   const [food, setFood] = useState({});
@@ -47,7 +48,7 @@ export default function FoodDetails({ foodId }) {
           </span>
         </div>
         <h2>Ingredients</h2>
-        {food.extendedIngredients.map((item) => (
+        {/*food.extendedIngredients.map((item) => (
           <div>
             <img
               src={
@@ -60,7 +61,10 @@ export default function FoodDetails({ foodId }) {
               {item.amount}{item.unit}
             </h3>
           </div>
-        ))}
+        ))*/} 
+          {/** split the code above into component and pass props (ItemList.jsx)*/}
+          <ItemList food={food} isLoading={isLoading} />
+
         <h2>Instructions</h2>
         <div className={styles.recipeInstructions}>
           <ol>
