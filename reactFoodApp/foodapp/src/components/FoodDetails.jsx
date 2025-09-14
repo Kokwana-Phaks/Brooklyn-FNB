@@ -75,7 +75,7 @@ export default function FoodDetails({ foodId }) {
                 <li>{step.step}</li>
               ))
             )}
-          </ol>
+          </ol> 
         </div>
       </div>
     </div>

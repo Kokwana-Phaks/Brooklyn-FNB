@@ -20,9 +20,8 @@ export default function ItemList({ food, isLoading }) {
           </div >*/
 
           /// Split the code above and pass component as prop
-       
-          <item item={item}/>
 
+          <item item={item} />
         ))
       )}
       {}
